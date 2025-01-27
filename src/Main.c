@@ -2,8 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    printf("Hello, World!\n");
-    return 0;
+    system("mode con: lines=28 cols=82");
 }
 
 //Fim do código
