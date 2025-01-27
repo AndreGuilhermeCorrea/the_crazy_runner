@@ -14,8 +14,8 @@
 extern void telaXY(int x, int y); 
 extern char menu();
 extern void iniciar();
-extern char obstaculo();
-extern void personagem();
+extern char obstaculo(Variavel *v);
+extern void personagem(int pulo, Variavel *v);
 extern void creditos();
 extern void limpaTela();
 extern void delay(int timems);
