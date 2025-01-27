@@ -16,10 +16,14 @@ extern char menu();
 extern void iniciar();
 extern char obstaculo(Variavel *v);
 extern void personagem(int pulo, Variavel *v);
+extern void delay(int timems);
+
+extern void dadosUser();
+
+extern void ranking();
 extern void creditos();
 extern void limpaTela();
-extern void delay(int timems);
-extern void dadosUser();
+
 
 #endif
 
