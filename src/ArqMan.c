@@ -23,6 +23,21 @@ void exibirScoreJogador(int score)
     printf("Ultima pontuacao: %d", score);
 }
 
+void gravarJogadorBinario(Player jogador)
+{
+    FILE *arq = fopen("arq//Arquivo.dat", "ab");
+    if (arq == NULL)
+    {
+        printf("Erro ao abrir o arquivo.\n");
+        return;
+    }
+
+    // Grava o jogador como um único registro
+    fwrite(&jogador, sizeof(Player), 1, arq);
+
+    fclose(arq);
+}
+
 void lerUltimoNomeArquivoBinario()
 {
     FILE *arq = fopen("arq//Arquivo.dat", "rb");

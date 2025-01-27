@@ -20,6 +20,7 @@ extern void delay(int timems);
 extern void exibirNomeJogador(char nome[]);
 extern void lerUltimoNomeArquivoBinario();
 
+extern void gravarJogadorBinario(Player jogador);
 extern void dadosUser();
 
 extern void ranking();
