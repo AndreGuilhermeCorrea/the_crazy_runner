@@ -13,6 +13,10 @@ the_crazy_runner (O corredor maluco) é um game desenvolvido em C baseado no jog
 
 ![Jogo](/img/screen_shot_ii.png)
 
+## Vídeo de Demonstração do Projeto
+
+[![YouTube](https://img.shields.io/badge/YouTube-000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=5tFcMmWK2Wc)
+
 ## 📌 Descrição do Projeto
 
 - **Inicialização do Jogo**: Quando o programa é iniciado, a tela aberta solicita ao jogador que insira seu nome. O jogo carrega os dados do jogador, incluindo seu nome e pontuação mais recente, de um arquivo binário. Tal tela é exibida com um tamanho pré-definido.
