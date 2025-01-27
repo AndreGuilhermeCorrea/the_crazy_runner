@@ -19,6 +19,7 @@ extern void personagem(int pulo, Variavel *v);
 extern void creditos();
 extern void limpaTela();
 extern void delay(int timems);
+extern void dadosUser();
 
 #endif
 

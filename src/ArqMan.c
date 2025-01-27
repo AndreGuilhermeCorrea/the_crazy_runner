@@ -6,6 +6,18 @@
 #include <windows.h>
 
 #include "Header.h"
+#include "VGlobais.h"
+
+// Função para obter os dados do usuário
+void dadosUser()
+{
+    Player jogador;
+    printf("Digite o nome do Player: ");
+    fflush(stdin);// Limpa o buffer de entrada para remover caracteres indesejados
+    fgets(jogador.nome, sizeof(jogador.nome), stdin); 
+    jogador.score = 0;
+
+}
 
 void creditos() {
     system("cls");

@@ -4,8 +4,8 @@
 #include "Header.h"
 
 int main() {
-    system("mode con: lines=28 cols=82");
-
+    system("mode con: lines=28 cols=82"); // Define o tamanho da tela
+    dadosUser(); 
     inicioGame();
 }
 
