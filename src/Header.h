@@ -22,11 +22,11 @@ extern void lerUltimoNomeArquivoBinario();
 
 extern void gravarJogadorBinario(Player jogador);
 extern void dadosUser();
+extern void chamaScore(int score);
 
 extern void ranking();
 extern void creditos();
 extern void limpaTela();
-
 
 #endif
 

@@ -53,6 +53,48 @@ void lerUltimoNomeArquivoBinario()
     fclose(arq);
 }
 
+Player buscaNomeArquivoBinario() {
+    FILE *arq = fopen("arq//arquivo.dat", "rb");
+    if (arq == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+    }
+    Player jogador;
+    fseek(arq, -sizeof(Player), SEEK_END); // Posiciona o cursor no final do arquivo
+    fread(&jogador, sizeof(Player), 1, arq); // Lê o último registro do arquivo
+    fclose(arq);
+    return jogador;
+}
+
+void chamaScore(int score){
+    Player jogador = buscaNomeArquivoBinario();
+    gravarScoreJogadorArquivoBinario(jogador.nome, score);
+}
+
+void gravarScoreJogadorArquivoBinario(const char *nomeJogador, int novoScore) {
+    FILE *arq = fopen("arq//arquivo.dat", "r+b"); // Abre o arquivo para leitura e escrita binária
+
+    if (arq == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return;
+    }
+
+    Player jogador;
+
+    while (fread(&jogador, sizeof(jogador), 1, arq) == 1) {
+        if (strcmp(jogador.nome, nomeJogador) == 0) {
+            // Atualiza o score do jogador
+            jogador.score = novoScore;
+            // Move o cursor para a posição correta para escrever o novo score
+            fseek(arq, -sizeof(jogador), SEEK_CUR);
+            // Escreve o novo score no arquivo
+            fwrite(&jogador, sizeof(jogador), 1, arq);
+            break; // Sai do loop após atualizar o score
+        }
+    }
+
+    fclose(arq);
+}
+
 void exibirRanking() {
     FILE *arq = fopen("arq//Arquivo.dat", "rb");
     if (arq == NULL) {
@@ -142,6 +184,7 @@ void dadosUser()
     fflush(stdin);// Limpa o buffer de entrada para remover caracteres indesejados
     fgets(jogador.nome, sizeof(jogador.nome), stdin); 
     jogador.score = 0;
+    gravarJogadorBinario(jogador);
 
 }
 
