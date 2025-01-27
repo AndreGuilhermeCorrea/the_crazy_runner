@@ -5,7 +5,7 @@
 ![GNU](https://img.shields.io/badge/GNU-000?style=for-the-badge&logo=gnu&logoColor=white)
 ![CodeBlocks](https://img.shields.io/badge/CodeBlocks-000?style=for-the-badge&logo=&logoColor=white)
 
-the_crazy_runner (O corredor maluco) é um game desenvolvido em C baseado no jogo "Chrome Dino" do Google Chrome. O jogo foi desenvolvido em março de 2024 pela Profª Daniele Frosoni como um projeto para a disciplina de Programação II do curso de Jogos Digitais do Centro Paula Souza - Faculdade Ministro Ralph Biasi (FATEC AMERICANA).
+the_crazy_runner (O corredor maluco) é um game desenvolvido em C baseado no jogo "Chrome Dino" do Google Chrome. O jogo foi desenvolvido em março de 2024 como um projeto para a disciplina de Programação II (Profª Daniele Frosonido) do curso de Jogos Digitais do Centro Paula Souza - Faculdade Ministro Ralph Biasi (FATEC AMERICANA).
 
 ## 🎮 Screenshots
 
