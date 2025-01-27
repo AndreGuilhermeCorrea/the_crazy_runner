@@ -1,14 +1,24 @@
 #include <stdlib.h>
+#include <stdlib.h>
 #include <conio.h>
 
+// Função que exibe o menu do jogo
 char menu() {
     char opcao;
     system("cls");
-    printf("1 - Iniciar\n");
-    printf("2 - Tela\n");
-    printf("3 - Sair\n");
-    printf("Digite a opcao desejada: ");
-    opcao = getch();
+
+    printf("#####   #######    ######  #####  ######"); 
+    printf("##      ##   ##      ##    ##     ##"); 
+    printf("####    #######      ##    #####  ##"); 
+    printf("##      ##   ##      ##    ##     ##"); 
+    printf("##      ##   ##      ##    #####  ###### "); 
+
+    printf("W PARA INICIAR"); 
+    printf("X PARA SAIR"); 
+    printf("C PARA CREDITOS"); 
+    printf("R PARA RANKING"); 
+    
+    opcao = getch(); // Recebe a opção do usuário
     return opcao;
 }
 
