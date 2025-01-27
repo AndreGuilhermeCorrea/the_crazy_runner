@@ -16,9 +16,9 @@ extern char menu();
 extern void iniciar();
 extern char obstaculo();
 extern void personagem();
-extern void velocidade();
 extern void creditos();
 extern void limpaTela();
+extern void delay(int timems);
 
 #endif
 
