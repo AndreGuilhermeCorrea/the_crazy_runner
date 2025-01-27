@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdlib.h>
+#include <windows.h>
 #include <conio.h>
 
+#include "VGlobais.h"
 #include "Header.h"
 
 // Função que exibe o menu do jogo
