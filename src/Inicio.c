@@ -9,7 +9,7 @@
 
 void iniciar() {
     system("cls"); 
-
+    lerUltimoNomeArquivoBinario();
     telaXY(5, 2); 
     printf("Aperte X para sair, Aperte W para Pular"); 
     telaXY(48, 2); 

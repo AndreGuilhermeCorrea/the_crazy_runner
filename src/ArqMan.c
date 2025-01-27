@@ -11,6 +11,33 @@
 #define MAX_JOGADORES 10
 #define TAM_NOME 30
 
+void exibirNomeJogador(char nome[])
+{
+    telaXY(48, 3);
+    printf("PLAYER: %s", nome);
+}
+
+void exibirScoreJogador(int score)
+{
+    telaXY(2, 10);
+    printf("Ultima pontuacao: %d", score);
+}
+
+void lerUltimoNomeArquivoBinario()
+{
+    FILE *arq = fopen("arq//Arquivo.dat", "rb");
+    if (arq == NULL)
+    {
+        printf("Ocorreu um problema ao abrir o arquivo\n");
+    }
+
+    Player jogador;
+    fseek(arq, -sizeof(Player), SEEK_END); // Move o cursor para o último registro
+    fread(&jogador, sizeof(Player), 1, arq); // Lê o último registro
+    exibirNomeJogador(jogador.nome);// Exibe o nome e o score do jogador na tela
+    fclose(arq);
+}
+
 void exibirRanking() {
     FILE *arq = fopen("arq//Arquivo.dat", "rb");
     if (arq == NULL) {

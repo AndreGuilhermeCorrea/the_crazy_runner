@@ -2,7 +2,10 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <windows.h>
+#include <time.h>
+
 #include "Header.h"
+#include "VGlobais.h"
 
 void limpaTela() {
     system("cls");

@@ -5,7 +5,7 @@
 #include "Time.c"
 #include "Menu.c"
 #include "Inicio.c"
-#include "Pbstaculo.c"
+#include "Obstaculo.c"
 #include "Personagem.c"
 #include "LimpaTela.c"
 #include "ArqMan.c"
@@ -17,6 +17,8 @@ extern void iniciar();
 extern char obstaculo(Variavel *v);
 extern void personagem(int pulo, Variavel *v);
 extern void delay(int timems);
+extern void exibirNomeJogador(char nome[]);
+extern void lerUltimoNomeArquivoBinario();
 
 extern void dadosUser();
 
